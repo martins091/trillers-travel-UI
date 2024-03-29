@@ -31,7 +31,7 @@ export const Map = () => {
           </div>
         </div>
         <div>
-          <img src="images/curve.PNG" alt="" />
+          <img src="/images/curve.PNG" alt="" />
         </div>
         <div className="bg-[#3D5654] px-6 -mx-4 rounded-b-3xl pb-6 -mb-4 relative">
           <div className="flex space-x-2 mt-4 justify-center items-center">

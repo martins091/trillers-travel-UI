@@ -5,6 +5,7 @@ import { LuWallet } from "react-icons/lu";
 import { MdOutlineLibraryBooks } from "react-icons/md";
 import { TbChartPie } from "react-icons/tb";
 import { FiSettings } from "react-icons/fi";
+import Image from "next/image";
 import { CurvedLine } from "./curvedLine";
 
 export const Sidebar = () => {
@@ -21,10 +22,12 @@ export const Sidebar = () => {
     <div>
       <div className="bg-[#3D5654] w-60 h-60 flex flex-col rounded-t-3xl justify-center items-center">
         <div className="flex-col border-2 border-red-500 rounded-full h-20 w-20 flex justify-center items-center">
-          <img
+          <Image
             src="/images/martins.jpg"
             alt="profile"
             className="h-16 w-16 rounded-full"
+            width={64}
+            height={64}
           />
         </div>
         <h1 className="text-lg font-medium text-center uppercase mt-2">
@@ -44,18 +47,24 @@ export const Sidebar = () => {
             }`}
           >
             <span className="mr-4 ml-1 text-[#C99C33]">{item.icon}</span>
-            <p className="uppercase my-1 font-sm cursor-pointer text-sm">{item.text}</p>
-            
+            <p className="uppercase my-1 font-sm cursor-pointer text-sm">
+              {item.text}
+            </p>
           </div>
         ))}
         <div className="ml-2 mt-2">
           <h1 className="text-[#C99C33] capitalize">Active Users</h1>
           <img
-            src="images/people.png"
+            src="/images/people.png"
             alt="people"
             className="w-40 mt-1.5 h-10"
           />
-          <img src="images/image.PNG" alt="" className="" />
+          <img
+            src="/images/image.PNG"
+            alt=""
+            className=""
+            layout="fixed"
+          />
         </div>
       </div>
     </div>
