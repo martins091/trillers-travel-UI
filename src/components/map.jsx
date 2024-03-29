@@ -1,6 +1,7 @@
 import React from "react";
 import { CurvedLine } from "./curvedLine";
 import { BiSolidUpArrow } from "react-icons/bi";
+import Image from "next/image";
 
 export const Map = () => {
   return (
@@ -10,11 +11,10 @@ export const Map = () => {
           FILTER
         </button>
         <select className="bg-white text-gray-600 px-4 font-semibold py-2 text-xs rounded-full">
-  <option value="1">TICKET OF CLASS 1</option>
-  <option value="2">TICKET OF CLASS 2</option>
-  <option value="3">TICKET OF CLASS 3</option>
-</select>
-
+          <option value="1">TICKET OF CLASS 1</option>
+          <option value="2">TICKET OF CLASS 2</option>
+          <option value="3">TICKET OF CLASS 3</option>
+        </select>
       </div>
       <div className="flex flex-col bg-[#425C5A] rounded-3xl p-4">
         <div className="flex space-x-10">
@@ -31,7 +31,7 @@ export const Map = () => {
           </div>
         </div>
         <div>
-          <img src="/images/curve.PNG" alt="" />
+          <Image src="/images/curve.PNG" alt="" width={400} height={200} />
         </div>
         <div className="bg-[#3D5654] px-6 -mx-4 rounded-b-3xl pb-6 -mb-4 relative">
           <div className="flex space-x-2 mt-4 justify-center items-center">
@@ -48,12 +48,18 @@ export const Map = () => {
               <div className="w-4 h-4 rounded-full bg-[#C99C33] cursor-pointer absolute left-14 bottom-15"></div>
             </div>
             <div className="flex space-x-16 ml-2 mt-4">
-              <div >
-              <BiSolidUpArrow size={20} className="text-[#C99C33] -mb-1 ml-6" />
+              <div>
+                <BiSolidUpArrow
+                  size={20}
+                  className="text-[#C99C33] -mb-1 ml-6"
+                />
                 <p className=" px-4 bg-[#C99C33] rounded-full">$500</p>
               </div>
-              <div >
-              <BiSolidUpArrow size={20} className="text-[#C99C33] -mb-1 ml-7" />
+              <div>
+                <BiSolidUpArrow
+                  size={20}
+                  className="text-[#C99C33] -mb-1 ml-7"
+                />
                 <p className=" px-4 bg-[#C99C33] rounded-full">$2500</p>
               </div>
             </div>

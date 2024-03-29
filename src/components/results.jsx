@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export const Results = () => {
   return (
@@ -9,7 +10,7 @@ export const Results = () => {
       <div className="flex flex-col space-y-0">
         <div className="flex relative bg-white border-b border-dashed text-gray-600 space-x-8 px-6 py-4 rounded-t-3xl justify-center items-center">
           <div>
-            <img src="/images/emirate.PNG" alt="" />
+            <Image src="/images/emirate.PNG" alt="" width={400} height={200} />
           </div>
           <div className="flex flex-col space-y-2">
             <h1 className=" text-3xl">JFK</h1>
@@ -18,7 +19,9 @@ export const Results = () => {
           <div className="flex flex-col">
             <div>
               <p className="text-xs font-semibold ml-2">EMIRATE</p>
-              <p className="text-sm font-semibold ml-2 text-[#C99C33]">11H 20M</p>
+              <p className="text-sm font-semibold ml-2 text-[#C99C33]">
+                11H 20M
+              </p>
             </div>
             <div className="text-md whitespace-nowrap">NON-STOP</div>
           </div>
@@ -37,7 +40,12 @@ export const Results = () => {
         </div>
         <div className="flex relative bg-white border-b border-dashed text-gray-600 space-x-8 px-6 py-4 justify-center items-center">
           <div>
-            <img src="/images/qatar.PNG" alt="qatar" />
+            <Image
+              src="/images/qatar.PNG"
+              alt="qatar"
+              width={400}
+              height={200}
+            />
           </div>
           <div className="flex flex-col space-y-2">
             <h1 className=" text-3xl">JFK</h1>
@@ -45,8 +53,12 @@ export const Results = () => {
           </div>
           <div className="flex flex-col">
             <div>
-              <p className="text-xs font-semibold whitespace-nowrap">QATAR AIRWAY</p>
-              <p className="text-sm font-semibold ml-2 text-[#C99C33]">11H 20M</p>
+              <p className="text-xs font-semibold whitespace-nowrap">
+                QATAR AIRWAY
+              </p>
+              <p className="text-sm font-semibold ml-2 text-[#C99C33]">
+                11H 20M
+              </p>
             </div>
             <div className="text-md whitespace-nowrap">NON-STOP</div>
           </div>
@@ -65,7 +77,7 @@ export const Results = () => {
         </div>
         <div className="flex relative bg-white border-b border-dashed text-gray-600 space-x-8 px-6 py-4 justify-center items-center">
           <div>
-            <img src="/images/luf.PNG" alt="" />
+            <Image src="/images/luf.PNG" alt="" width={400} height={200} />
           </div>
           <div className="flex flex-col space-y-2">
             <h1 className=" text-3xl">JFK</h1>
@@ -74,7 +86,9 @@ export const Results = () => {
           <div className="flex flex-col">
             <div>
               <p className="text-xs font-semibold">LUFTHANSA</p>
-              <p className="text-sm font-semibold ml-2 text-[#C99C33]">11H 20M</p>
+              <p className="text-sm font-semibold ml-2 text-[#C99C33]">
+                11H 20M
+              </p>
             </div>
             <div className="text-md whitespace-nowrap">NON-STOP</div>
           </div>
@@ -93,7 +107,7 @@ export const Results = () => {
         </div>
         <div className="relative flex bg-white text-gray-600 space-x-8 rounded-b-3xl px-6 py-4 justify-center items-center">
           <div>
-            <img src="/images/emirate.PNG" alt="" />
+            <Image src="/images/emirate.PNG" alt="" width={400} height={200} />
           </div>
           <div className="flex flex-col space-y-2">
             <h1 className=" text-3xl">JFK</h1>
@@ -102,7 +116,9 @@ export const Results = () => {
           <div className="flex flex-col">
             <div>
               <p className="text-xs font-semibold ml-2">EMIRATE</p>
-              <p className="text-sm font-semibold ml-2 text-[#C99C33]">11H 20M</p>
+              <p className="text-sm font-semibold ml-2 text-[#C99C33]">
+                11H 20M
+              </p>
             </div>
             <div className="text-md whitespace-nowrap">NON-STOP</div>
           </div>

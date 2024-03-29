@@ -54,16 +54,19 @@ export const Sidebar = () => {
         ))}
         <div className="ml-2 mt-2">
           <h1 className="text-[#C99C33] capitalize">Active Users</h1>
-          <img
+          <Image
             src="/images/people.png"
             alt="people"
-            className="w-40 mt-1.5 h-10"
+            className=" mt-1.5"
+            width={400}
+            height={200}
           />
-          <img
+          <Image
             src="/images/image.PNG"
             alt=""
             className=""
-            layout="fixed"
+            width={400}
+            height={200}
           />
         </div>
       </div>
